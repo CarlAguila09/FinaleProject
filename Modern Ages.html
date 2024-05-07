@@ -1,0 +1,181 @@
+<html lang="en">
+  <head>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  color: white;
+  padding: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2; /* Set a higher z-index for the dropdown */
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+.main {
+  position: relative; /* Add position relative to the main container */
+}
+
+.logo {
+  position: absolute; /* Position the logo absolutely within the main container */
+  top: 0;
+  left: 0;
+}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Middle Ages.css"/>
+    <title>Cluster Project</title>
+  </head>
+  
+  <body>
+  <div class="main">
+		<div class="logo">
+			<a href="index.html" ><img src="images/logo.png"></a>
+		</div>
+		
+        <nav>
+            <ul>
+              <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="Topics.html">Ancient Period <i class="fas fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="Sumerian.html">Sumerian</a></li>
+                  <li><a href="Babylonian.html">Babylonian</a></li>
+                  <li><a href="Egyptian.html">Egyptian</a></li>
+                  <li><a href="Greek.html">Greek</a></li>
+                  <li><a href="Roman.html">Roman</a></li>
+                  <li><a href="Chinese.html">Chinese</a></li>
+                </ul>
+              </li>
+              <li><a href="Middle Ages.html">Middle Ages</a></li>
+              <li><a href="Modern Ages.html">Modern Ages</a></li>
+            </ul>
+          </nav>
+
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 11</div>
+            <img src="Modern/32.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 11</div>
+            <img src="Modern/33.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 11</div>
+            <img src="Modern/34.png" style="width:75%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 11</div>
+            <img src="Modern/35.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 11</div>
+            <img src="Modern/36.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 11</div>
+            <img src="Modern/37.png" style="width:75%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 11</div>
+            <img src="Modern/38.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 11</div>
+            <img src="Modern/39.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 11</div>
+            <img src="Modern/40.png" style="width:75%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 11</div>
+            <img src="Modern/41.png" style="width:75%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 11</div>
+            <img src="Modern/42.png" style="width:75%">
+          </div>
+          
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="tunog">
+          <audio id="audioPlayer" src="VOICEOVER/c.mp3" type="audio/mp3" controls></audio>
+  <button onclick="playAudio()"></button>
+
+
+        <script src="javas.js">
+          function playAudio() {
+              var audio = document.getElementById("audioPlayer");
+              audio.play();
+          }
+      </script>
+        
+        
+    </body>
+   </html>

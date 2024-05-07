@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        nav {
+          background-color: #333; /* Adding a background color for visibility */
+          color: white;
+          padding: 50px;
+        }
+    
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+    
+        nav li {
+          margin-right: 20px;
+          position: relative;
+        }
+    
+        nav a {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          border-radius: 5px;
+        }
+    
+        nav ul ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+        }
+    
+        nav ul li:hover > ul {
+          display: inherit;
+        }
+    
+        nav ul ul li {
+          width: 200px;
+          float: none;
+          display: list-item;
+          position: relative;
+        }
+    
+        nav ul ul ul li {
+          position: relative;
+          top: -60px;
+          left: 200px;
+        }
+
+        /* Centering the title */
+        .title {
+          text-align: center;
+          position: absolute;
+          top: 0; /* Adjusting the vertical position */
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+        }
+
+        /* Adding margin to the paragraph */
+        .button {
+          margin-top: 20px; /* Adjust the margin-top value as needed */
+        }
+      </style>
+	<title> WEB PRAROZ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="topic.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div class="logo">
+			<a href="index.html" ><img src="images/logo.png"></a>
+		</div>
+		
+        <nav>
+            <ul>
+              <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#">Ancient Period <i class="fas fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="Sumerian.html">Sumerian</a></li>
+                  <li><a href="Babylonian.html">Babylonian</a></li>
+                  <li><a href="Egyptian.html">Egyptian</a></li>
+                  <li><a href="Greek.html">Greek</a></li>
+                  <li><a href="Roman.html">Roman</a></li>
+                  <li><a href="Chinese.html">Chinese</a></li>
+                </ul>
+              </li>
+              <li><a href="Middle Ages.html">Middle Ages</a></li>
+              <li><a href="Modern Ages.html">Modern Ages</a></li>
+            </ul>
+          </nav>
+
+		 </div>
+		 <div class="title">
+		 	<h1>INTRODUCTION TO<br>HISTORICAL ANTECEDENTS</h1>
+		 </div>
+		 <div class="button">
+		 	<p>An antecedent is a preceding of the emergence or existence of anything. Hence, historical antecedents in science and technology have paved the way for the presence of advanced and sophisticated scientific and technical advancements today. Understanding the history of science and technology can help you evaluate today's advancements. Knowing how earlier generations affected and were influenced by advances in science and technology allows today's generation to make educated judgments about how science and technology should be applied in daily life.
+            </p>
+            <audio id="audioPlayer" src="VOICEOVER/INTRO.mp3" type="audio/mp3"></audio>
+            <button onclick="playAudio()">Play Voice <i class="fas fa-caret-right"></i></button>
+		 </div>
+	</header>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audioPlayer");
+            audio.play();
+        }
+    </script>
+</body>
+</html>

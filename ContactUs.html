@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+/* General Styles */
+body {
+background-image: url('images/background-1.jpg');
+  background-color: #f5f5f5;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {  
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 3px solid #ccc;
+}
+
+/* Header Styles */
+.header {
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd; 
+  background-color: #4f6fad; /* Change background color */
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 100;
+  font-size: 2.813em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+}
+
+.header h3 {
+  font-size: 1.25em;
+  margin: 1em 0 0.4em 0;
+}
+
+/* Body Styles */
+.body {
+  padding: .5em 2.5em 1em;
+}
+
+/* Form Styles */
+form {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0 0 0.25em 0; 
+  clear: both;
+}
+
+li:last-child {
+  margin: 0;    
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.pull-right {
+  float: right; 
+}
+
+.divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+
+.req {
+  color: #ee9cb4; 
+}
+
+label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: 1em;
+}
+
+input,
+textarea {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+  width: 100%;
+}
+
+.btn {
+  font-size: 1em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+}
+
+.btn-submit {
+  background-color: #4f6fad;
+  border-bottom-color: darken(#4f6fad, 15%);
+}
+
+.btn-submit:hover {
+  background-color: lighten(#4f6fad, 5%);
+}
+
+.small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+/* Media Queries */
+@media only screen and (max-width:480px) {
+  .pull-right {
+    float: none; 
+  }
+  input {
+    width: 100%; 
+  }
+  label {
+    width: 100%;
+    display: inline-block;
+    clear: both;
+  }
+  li, p {
+    width: 100%; 
+  }
+  input.btn {
+    margin: 1.5em 0 0.5em; 
+  }
+  .header h1 {
+    font-size: 2.25em; 
+  }
+  .header h3 {
+    font-size: 1.125em;
+  }
+  li .small {
+    display: none; 
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row header">
+    <h1>CONTACT US &nbsp;</h1>
+    <h3>Fill out the form below to learn more!</h3>
+  </div>
+  <div class="row body">
+    <form action="#">
+      <ul>
+        <li>
+          <p class="left">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" placeholder="Carl" />
+          </p>
+          <p class="pull-right">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" placeholder="Aguila" />      
+          </p>
+        </li>
+        <li>
+          <p>
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="carlaguila@gmail.com" />
+          </p>
+        </li>        
+        <li><div class="divider"></div></li>
+        <li>
+          <label for="comments">Comments</label>
+          <textarea cols="46" rows="3" name="comments"></textarea>
+        </li>
+        <li>
+          <input class="btn btn-submit" type="submit" value="Submit" />
+          <small>or press <strong>Enter</strong></small>
+        </li>
+      </ul>
+    </form>  
+  </div>
+  <!-- Home Button -->
+  <div style="text-align: center;">
+    <a href="index.html" class="btn" style="color: #000;">Home</a>
+  </div>
+</div>
+</body>
+</html>
